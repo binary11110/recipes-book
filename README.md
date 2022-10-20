@@ -1,5 +1,27 @@
 ![👩_🍳Recipes_Book](https://user-images.githubusercontent.com/86425586/196924662-647ab8f8-fa67-4d29-88a1-be0844b72a2f.png)
 
+#Recipes Book
+https://img.shields.io/github/languages/top/binary11110/recipes-book
+
+-------------------------------------------------------------------------------------
+## Description
+
+Recipes book helps you pick a recipe and add its ingrediants to shopping list
+
+Recipes book features :
+- Fetch / save data from firbase
+- Select / add / modify / delete  a recipe
+- Add recipe ingrediants to shopping list
+- Add / modify / remove ingrediants from shopping list
+- Route through pages using lazy loading
+- Authentication page using firbase authentication
+- Guards to route to an error page if the user isn't authenticated
+- Interceptor to add the user token to the authentication request
+-
+
+
+-------------------------------------------------------------------------------------
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
