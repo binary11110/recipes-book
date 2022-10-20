@@ -1,1 +1,17 @@
-<p>recipe-list works!</p>
+<div class="row">
+   <div class="col-sm-12 mt-5">
+    <button class="btn btn-success" (click)="onNewRecipe()">New recipe</button>
+   </div>
+   
+</div>
+<hr>
+<div class="row">
+    <div class="col-sm-12">
+       
+        <div *ngFor="let recipe of recipes ; let i=index" class="list-group">
+            <app-recipe-item [enter]="recipe"
+          [id]="i"></app-recipe-item>
+        </div>
+        
+    </div>
+</div>

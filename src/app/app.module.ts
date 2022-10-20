@@ -1,32 +1,51 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { HeaderComponent } from './header/header.component';
-import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-// import { RecipeListComponent } from './recpies/recipe-list/recipe-list.component';
-import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
-import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+
+import { ShoppingService } from './shopping-list/shopping-list.service';
+
+import { RecipesService } from './recipes/recipes.services';
+
+import { AuthIntercptor } from './auth/auth-intercptor';
+
+import { RecipeModule } from './recipes/recipe.module';
+import { ShopppingListModule } from './shopping-list/shopping-list.module';
+import { SharedModule } from './shared/shared.module';
+
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShoppingListComponent,
-    RecipesComponent,
+  
     HeaderComponent,
-    ShoppingEditComponent,
-    // RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent
+   
+     
+     
   ],
   imports: [
+    
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
+    HttpClientModule,   
+    
+    
+    
+    SharedModule,
+    
   ],
-  providers: [],
+  providers: [ ShoppingService,RecipesService,{
+    provide:HTTP_INTERCEPTORS,
+    useClass: AuthIntercptor,
+    multi:true
+  }],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
