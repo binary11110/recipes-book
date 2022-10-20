@@ -1,6 +1,7 @@
 ![👩_🍳Recipes_Book](https://user-images.githubusercontent.com/86425586/196924662-647ab8f8-fa67-4d29-88a1-be0844b72a2f.png)
 
 #Recipes Book
+
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/binary11110/recipes-book">
 
 
@@ -18,7 +19,6 @@ Recipes book features :
 - Authentication page using firbase authentication
 - Guards to route to an error page if the user isn't authenticated
 - Interceptor to add the user token to the authentication request
--
 
 
 -------------------------------------------------------------------------------------
