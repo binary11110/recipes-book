@@ -1,7 +1,8 @@
 ![👩_🍳Recipes_Book](https://user-images.githubusercontent.com/86425586/196924662-647ab8f8-fa67-4d29-88a1-be0844b72a2f.png)
 
 #Recipes Book
-https://img.shields.io/github/languages/top/binary11110/recipes-book
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/binary11110/recipes-book">
+
 
 -------------------------------------------------------------------------------------
 ## Description
